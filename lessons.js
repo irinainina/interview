@@ -20,6 +20,11 @@ const lessons = [
     description: '',
   },
   {
+    file: 'js-tasks.md',
+    title: 'JavaScript tasks',
+    description: '',
+  },
+  {
     file: 'react.md',
     title: 'React',
     description: '',
@@ -33,5 +38,5 @@ const lessons = [
     file: 'vue.md',
     title: 'Vue 3',
     description: '',
-  },
+  },  
 ];
