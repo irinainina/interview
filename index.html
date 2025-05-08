@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Three.js course</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Подготовка к собеседованию</h1>
+    <ul id="file-list" />
+    <script src="lessons.js"></script>
+    <script>
+      const list = document.getElementById('file-list');
+      lessons.forEach((lesson) => {
+        const li = document.createElement('li');
+        li.innerHTML = `<a href="file-viewer.html?file=${lesson.file}">${lesson.title}</a><br><span>${lesson.description}</span>`;
+        list.appendChild(li);
+      });
+    </script>
+  </body>
+</html>
